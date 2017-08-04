@@ -6,15 +6,46 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>	      
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+	<style type="text/css">
+		.parpadea {
+		  
+		  animation-name: parpadeo;
+		  animation-duration: 1s;
+		  animation-timing-function: linear;
+		  animation-iteration-count: infinite;
+
+		  -webkit-animation-name:parpadeo;
+		  -webkit-animation-duration: 1s;
+		  -webkit-animation-timing-function: linear;
+		  -webkit-animation-iteration-count: infinite;
+		}
+		@-moz-keyframes parpadeo{  
+		  0% { opacity: 1.0; }
+		  50% { opacity: 0.0; }
+		  100% { opacity: 1.0; }
+		}
+
+		@-webkit-keyframes parpadeo {  
+		  0% { opacity: 1.0; }
+		  50% { opacity: 0.0; }
+		   100% { opacity: 1.0; }
+		}
+
+		@keyframes parpadeo {  
+		  0% { opacity: 1.0; }
+		   50% { opacity: 0.0; }
+		  100% { opacity: 1.0; }
+		}
+	</style>
 </head>
 <body style="text-align: center;">
-	<a class="waves-effect waves-light btn disabled" href="https://goo.gl/KQ46Bj" target="_blank" style="text-transform:none;background-color: #698A26;">
-		<i class="material-icons left">poll</i> Jug&aacute; y gan&aacute; (disponible durante los breaks)
+	<a class="waves-effect waves-light btn disabled" style="text-transform:none;background-color: #698A26;padding: 0 10px;">
+		<i class="material-icons left" style="margin: 0 5px 0 0;">poll</i> Jug&aacute; y gan&aacute; (durante los breaks)
 	</a>
 	
 	<!-- ENABLE
-	<a class="waves-effect waves-light btn" href="https://goo.gl/KQ46Bj" target="_blank" style="text-transform:none;background-color: #698A26;"> <i class="material-icons left">poll</i> Encuesta (sólo disponible en break)</a>
+	<a class="waves-effect waves-light btn parpadea" href="https://goo.gl/KQ46Bj" target="_blank" style="text-transform:none;background-color: #698A26;padding: 0 10px;"> <i class="material-icons left" style="margin: 0 5px 0 0;">poll</i> Jug&aacute; y gan&aacute; (durante los breaks)</a>
 	-->
 </body>
 
